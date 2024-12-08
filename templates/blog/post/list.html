@@ -1,0 +1,34 @@
+{% extends 'blog/base.html' %}
+{% block title %}NEL Blog{% endblock %}
+
+{% block content %}
+
+<div class="blog-container">
+    <h1 class="blog-title">Welcome to the NEL Blog</h1>
+    <div class="blog-posts">
+        {% for post in posts %}
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="{{ post.get_absolute_url }}">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                <p class="post-meta">
+                    Published on {{ post.publish|date:"F d, Y" }} by {{ post.author }}
+                </p>
+                <div class="post-body">
+                    {{ post.body|truncatewords:30|linebreaks }}
+                </div>
+            </article>
+        {% empty %}
+            <p class="no-posts">No posts found. Check back later!</p>
+        {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        {% include "pagination.html" with page=page_obj %}
+    </div>
+</div>
+
+{% endblock %}

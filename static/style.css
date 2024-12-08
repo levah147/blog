@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #5678a0;
+    color: #dbe0cc;
+    width: 100%;
+    padding: 10px;
+    /* text-align: center; */
+  }
+  /* login style */
+  .login-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px ;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form .account-options {
+    margin-bottom: 20px;
+  }
+  
+  .account-options label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .account-options span {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    width: 100%;
+    background-color: #f0c14b;
+    color: #111;
+    border: 1px solid #a88734;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddb347;
+  }
+  
+  .legal-notices {
+    font-size: 12px;
+    color: #555;
+    margin: 15px 0;
+  }
+  
+  .legal-notices a {
+    color: #007185;
+    text-decoration: none;
+  }
+  
+  .legal-notices a:hover {
+    text-decoration: underline;
+  }
+  
+  .help-link,
+  .business-link {
+    font-size: 12px;
+    color: #007185;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .help-link:hover,
+  .business-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background-color: #5678a0;
+    color: #ddd4d4;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .footer-content {
+    font-size: 12px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  .footer-links a {
+    color: #f1eded;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  

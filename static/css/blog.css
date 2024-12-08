@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Blog Container */
+.blog-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Blog Title */
+.blog-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Blog Posts */
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Post Title */
+.post-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3498db;
+    transition: color 0.2s;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-title a:hover {
+    color: #2980b9;
+}
+
+/* Post Meta */
+.post-meta {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+/* Post Body */
+.post-body {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.pagination a:hover {
+    background: #2980b9;
+}
+
+/* No Posts Message */
+.no-posts {
+    text-align: center;
+    font-size: 1.2em;
+    color: #7f8c8d;
+    padding: 20px;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .blog-container {
+        padding: 15px;
+    }
+
+    .post-title {
+        font-size: 1.2em;
+    }
+
+    .post-body {
+        font-size: 0.95em;
+    }
+}

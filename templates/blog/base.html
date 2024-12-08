@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    
+    {% include "nav.html" %}
+
+    <div class="content">
+        {%  block content %}
+        {% endblock %}
+    </div>
+    
+    <div class="sideber">
+        <h2>NEL Blog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi debitis ex culpa voluptatum voluptatibus perferendis
+             molestiae voluptate illum labore, vel odio unde neque adipisci, dolor praesentium tempore impedit natus et?</p>
+    </div>
+  
+    {% include "footer.html" %}
+</body>
+</html>

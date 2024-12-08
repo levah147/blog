@@ -1,98 +1,66 @@
 <!DOCTYPE html>
-<html>
+{% load static %}
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-
-<h2>Login Form</h2>
-
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="https://www.w3schools.com/howto/img_avatar2.png" width="10%" height="50"  alt="Avatar" class="avatar">
+  <!-- Header Section -->
+  <div class="header">
+    <img src="https://dominionuniversity.edu.ng/wp-content/uploads/2019/08/New_Logo_DU_1-1.png" width="100" height="50" alt="">
+    <!-- <h1>Welcome</h1> -->
   </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+  <!-- Login Form Section -->
+  <div class="login-container">
+    <form class="login-form">
+      <div class="account-options">
+        <label>
+          <input type="radio" name="account" value="create">
+          Create account <span>New to YouGo?</span>
+        </label>
+        <label>
+          <input type="radio" name="account" value="signin" checked>
+          Sign in <span>Already a customer?</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="email">Email or phone number</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn">Continue</button>
+      <p class="legal-notices">
+        By continuing, you agree to YouGo's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
+      </p>
+      <a href="#" class="help-link">Need help?</a>
+      <p class="business-link">
+        Buying for work? <a href="#">Shop on YouGo Business</a>
+      </p>
+      
+    </form>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>
+        <a href="#">English</a> | <a href="#">United States</a>
+      </p>
+      <ul class="footer-links">
+        <li><a href="#">Conditions of Use</a></li>
+        <li><a href="#">Privacy Notice</a></li>
+        <li><a href="#">Consumer Health Data Privacy Disclosure</a></li>
+        <li><a href="#">Your Ads Privacy Choices</a></li>
+      </ul>
+      <p>© 1996-2024, YouGo.ng, Inc. or its affiliates</p>
+    </div>
+  </footer>
 </body>
 </html>
