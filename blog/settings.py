@@ -80,12 +80,12 @@ DATABASES = {
 # from decouple import config
 # from decouple import config
 
-# import dj_database_url
+import dj_database_url
 
 
-# DATABASES = {
-#     'default': dj_database_url.parse(env('DATABASE_URL'))
-# }
+DATABASES = {
+    'default': dj_database_url.parse(env('DATABASE_URL'))
+}
 
 # DATABASES = {
 #     'default':
